@@ -17,7 +17,8 @@ import java.util.List;
  */
 public class Generator {
 
-    private static final String USERNAME = System.getenv().get("USER");
+    // private static final String USERNAME = System.getenv().get("USER");
+    private static final String USERNAME = "bytettt";
 
     /**
      * 项目信息
@@ -34,13 +35,13 @@ public class Generator {
     private static final String DATABASE_PORT = "3306";
     private static final String DATABASE_NAME = "novel";
     private static final String DATABASE_USERNAME = "root";
-    private static final String DATABASE_PASSWORD = "test123456";
+    private static final String DATABASE_PASSWORD = "123456";
 
 
     public static void main(String[] args) {
 
         // 传入需要生成的表名，多个用英文逗号分隔，所有用 all 表示
-        genCode("sys_user");
+        genCode("all");
 
     }
 
