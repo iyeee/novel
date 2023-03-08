@@ -92,7 +92,7 @@ spring:
   # Elasticsearch 配置
   elasticsearch:
     # 是否开启 Elasticsearch 搜索引擎功能：true-开启 false-不开启
-    enabled: false
+    enabled: true
     uris:
       - https://my-deployment-ce7ca3.es.us-central1.gcp.cloud.es.io:9243
     username: elastic
@@ -104,12 +104,12 @@ spring:
     enabled: false
   # RabbitMQ 配置
   rabbitmq:
-    addresses: "amqp://guest:guest@47.106.243.172"
+    addresses: "amqp://guest:guest@8.130.76.136"
     virtual-host: novel
     template:
       retry:
         # 开启重试
-        enabled: true
+        enabled: false
         # 最大重试次数
         max-attempts: 3
         # 第一次和第二次重试之间的持续时间
